@@ -11,8 +11,14 @@ Layout: none
 <pre>
 # @{{ site.github.owner_name }}
 <i>_{{ site.github.project_tagline }}_</i>
+<a href="{{ site.github.owner_url }}">{{ site.github.owner_url }}</a>
 
-orgs: {{ organization_members }}
+{% for e in site.github %}{{ e }}
+{% endif %}
+
+{% for e in site %}{{ e }}
+{% endif %}
+
 
 ## Projects created
 {% for repo in site.github.public_repositories %}{% if repo.fork == false and repo.name != site.github.project_title %}
