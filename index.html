@@ -17,15 +17,15 @@ title: Julien Deswaef
 Projects created
 ----------------
 {% for repo in site.github.public_repositories %}{% if repo.fork == false and repo.name != site.github.project_title %}
-<strong>**{{ repo.name }}**</strong>
+<strong>** {{ repo.name }} **</strong>
 {{ repo.description }}
 <a href="{{ repo.html_url }}">{{ repo.html_url }}</a>
 {% endif %}{% endfor %}
 
-Projects contributed
---------------------
+Projects forked
+---------------
 {% for repo in site.github.public_repositories %}{% if repo.fork %}
-- <strong>**{{ repo.name }}**</strong> | <a href="{{ repo.html_url }}">{{ repo.html_url }}</a>{% endif %}{% endfor %}
+- <strong>** {{ repo.name }} **</strong> : <a href="{{ repo.html_url }}">{{ repo.html_url }}</a>{% endif %}{% endfor %}
 
 fork me: <a href="{{ site.github.clone_url }}">{{ site.github.clone_url }}</a>
 
