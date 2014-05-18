@@ -14,13 +14,13 @@ title: Julien Deswaef
 
 {{ site.github.project_tagline }}
 
-{% for repo in site.github.public_repositories %}
-    {% if repo.fork == false %}
-- <strong>**{{ repo.name }}**</strong>
+My projects
+-----------
+
+{% for repo in site.github.public_repositories %}{% if repo.fork == false %}
+### <strong>**{{ repo.name }}**</strong>
 <a href="{{ repo.html_url }}">{{ repo.html_url }}</a>
-   {{ repo.description }}
-    {% endif %}
-{% endfor %}
+{{ repo.description }}{% endif %}{% endfor %}
 
 fork me: <a href="{{ site.github.clone_url }}">{{ site.github.clone_url }}</a>
 
