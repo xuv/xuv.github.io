@@ -16,8 +16,8 @@ title: Julien Deswaef
 
 {% for repo in site.github.public_repositories %}
     {% for e in repo %}
-        {% if e.fork == false %}
- - {{ e.name }} | {{ e.html_url }}
+        {% if !e.fork %}
+ - {{ e.name }} : {{ e.html_url }}
    {{ e.description }}
 
         {% endif %}
