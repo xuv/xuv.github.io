@@ -9,12 +9,12 @@ Layout: none
 </head>
 <body>
 <pre>
-# {{ page.title }}
-
+# @{{ site.github.owner_name }}
 {{ site.github.project_tagline }}
 
-## Projects created
+orgs: {{ organization_members }}
 
+## Projects created
 {% for repo in site.github.public_repositories %}{% if repo.fork == false and repo.name != site.github.project_title %}
 ### {{ repo.name }}
 {{ repo.description }}
@@ -22,7 +22,6 @@ Layout: none
 {% endif %}{% endfor %}
 
 ## Projects forked
-
 {% for repo in site.github.public_repositories %}{% if repo.fork %}
 - <strong>**{{ repo.name }}**</strong> : <a href="{{ repo.html_url }}">{{ repo.html_url }}</a>{% endif %}{% endfor %}
 
