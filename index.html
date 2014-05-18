@@ -16,14 +16,15 @@ title: Julien Deswaef
 
 {% for repo in site.github.public_repositories %}
     {% if repo.fork == false %}
- - {{ repo.name }} | {{ repo.html_url }}
+- <strong>**{{ repo.name }}**</strong>
+<a href="{{ repo.html_url }}">{{ repo.html_url }}</a>
    {{ repo.description }}
     {% endif %}
 {% endfor %}
 
-fork me: {{ site.github.clone_url }}
+fork me: <a href="{{ site.github.clone_url }}">{{ site.github.clone_url }}</a>
 
-revision: {{ site.github.build_revision }}
+revision: <a href="{{ site.github.url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision }}</a>
 </pre>
 </body>
 </html>
