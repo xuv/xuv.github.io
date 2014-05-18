@@ -13,13 +13,6 @@ Layout: none
 <i>_{{ site.github.project_tagline }}_</i>
 <a href="{{ site.github.owner_url }}">{{ site.github.owner_url }}</a>
 
-{% for e in site.github %}{{ e }}
-{% endfor %}
-
-{% for e in https://api.github.com/users/xuv/orgs %}{{ e }}
-{% endfor %}
-
-
 ## Projects created
 {% for repo in site.github.public_repositories %}{% if repo.fork == false and repo.name != site.github.project_title %}
 ### {{ repo.name }}
