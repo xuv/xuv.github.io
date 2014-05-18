@@ -10,13 +10,13 @@ Layout: none
 <body>
 <pre>
 # @{{ site.github.owner_name }}
-<i>_{{ site.github.project_tagline }}_  </i>
+<i>_{{ site.github.project_tagline }}  _</i>
 <a href="{{ site.github.owner_url }}">{{ site.github.owner_url }}</a>
 
 ## Projects created
 {% for repo in site.github.public_repositories %}{% if repo.fork == false and repo.name != site.github.project_title %}
 ### {{ repo.name }}
-<i>_{{ repo.description }}_  </i>
+<i>_{{ repo.description }}_</i>
 <a href="{{ repo.html_url }}">{{ repo.html_url }}</a>
 {% endif %}{% endfor %}
 
