@@ -1,3 +1,5 @@
+
+
 # @xuv
 _Personnal profile page describing activities on Github_
 https://github.com/xuv
@@ -38,8 +40,9 @@ https://github.com/xuv/svg-git-dummy
 - **so-simple-theme** : https://github.com/xuv/so-simple-theme
 - **svg.import.js** : https://github.com/xuv/svg.import.js
 
---
+----
 This webpage is automatically generated.
+
 Fork me: https://github.com/xuv/xuv.github.io.git
-Revision: b399ae7459b5d154bc88bfbe0294b2d5a551632e
+Revision: dabff4bbb5c90994434aefe7dc15f56bc95ac1fa
 
