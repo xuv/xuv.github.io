@@ -10,9 +10,11 @@ title: Julien Deswaef
     <body>
 <pre>
 {{ page.title }}
-================
+==============
 
-
+{% for element in site.github %}
+{{ element }}
+{% endfor %}
 </pre>
     </body>
 </html>
