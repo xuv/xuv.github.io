@@ -11,8 +11,15 @@ title: Julien Deswaef
 <pre>
 {{ page.title }}
 ==============
-{% for element in site.github %} {{ element }}
+
+{{ site.github.project_tagline }}
+
+{% for repo in site.github.public_repositories %}{{ repo }}
 {% endfor %}
+
+
+build_revision: {{ site.github.build_revision }}
+fork me: {{ site.github.clone_url }}
 </pre>
     </body>
 </html>
