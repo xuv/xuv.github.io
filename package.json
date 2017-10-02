@@ -2,6 +2,7 @@
   "name": "xuv.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://xuv.github.io/build",
   "dependencies": {
     "axios": "^0.16.2",
     "moment": "^2.18.1",
